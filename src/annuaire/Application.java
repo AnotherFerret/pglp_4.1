@@ -26,6 +26,8 @@ enum Application {
 						.datenaissance(d)
 						.telephone(t)
 						.build();
+		System.out.println(p1.ShowValues());
+		System.out.println(p2.ShowValues());
 	}					
 			
 

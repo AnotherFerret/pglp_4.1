@@ -2,7 +2,7 @@ package annuaire;
 
 public class PhoneNumber {
 
-	String phone; 
+	private String phone; 
 	
 	public PhoneNumber(String phone)
 	{
@@ -15,5 +15,10 @@ public class PhoneNumber {
 		{
 			this.phone = phone;
 		}
+	}
+	
+	public String ShowValue()
+	{
+		return this.phone;
 	}
 }

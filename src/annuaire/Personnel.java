@@ -63,5 +63,17 @@ public class Personnel {
 		telephone = builder.telephone;
 	}
 	
+	public String ShowValues()
+	{
+		String phones = "";
+		
+		for(PhoneNumber p : this.telephone)
+		{
+			phones += p.ShowValue();
+			phones += ", ";
+		}
+		
+		return this.nom + this.prenom + this.fonction + this.datenaissance + phones;
+	}
 	
 }

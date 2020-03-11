@@ -26,8 +26,22 @@ enum Application {
 						.datenaissance(d)
 						.telephone(t)
 						.build();
-		System.out.println(p1.ShowValues());
-		System.out.println(p2.ShowValues());
+		
+		GroupePersonnel gp1 = new GroupePersonnel();
+		GroupePersonnel gp2 = new GroupePersonnel();
+		GroupePersonnel gpall = new GroupePersonnel();
+		
+		gp1.AddPersonnel(p1);
+		gp1.AddPersonnel(p2);
+		
+		gp2.AddPersonnel(p1);
+		
+		gpall.AddPersonnel(gp1);
+		gpall.AddPersonnel(gp2);
+		
+		System.out.println(gpall.ShowValues());
+		gp1.ShowValues();
+		p1.ShowValues();
 	}					
 			
 

@@ -3,7 +3,7 @@ package annuaire;
 import java.time.LocalDate;
 import java.util.HashSet;
 
-public class Personnel {
+public class Personnel implements Groupe{
 
 	private String nom;
 	private String prenom;
@@ -63,6 +63,7 @@ public class Personnel {
 		telephone = builder.telephone;
 	}
 	
+	@Override
 	public String ShowValues()
 	{
 		String phones = "";

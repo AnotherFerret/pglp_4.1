@@ -34,7 +34,7 @@ public class TestPersonnel {
 	}
 	
 	@Test
-	public void BuilderTest() {
+	public void BuilderEmptyTest() {
 		String test1 = "namename2employé"+LocalDate.now()+"00 00 00 00 00, ";
 		assertEquals(p1.ShowValues(), test1);
 	}
